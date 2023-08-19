@@ -16,7 +16,7 @@
 	     <img src="zomato.png" alt="logo" class="navbar__logo"/>
 	    </div> 
 	    <div class ="navbar__nav__items">
-	      <button class="nav__item ">
+	      <button class="nav__item button__primary"><!--button__primary here we declare as globally by changing ctrl+f used to search items-->
 		  Order Food
 		  </button>
 	    </div>
@@ -33,18 +33,46 @@
 	       <h1 class ="hero__text" >
 		     Order food from favourite restaurants near you.
 		   </h1>
-		     <button class ="nav__item">Order now</button>
+		     <button class ="button__primary">Order now</button>
 	     </div>
 	  </section>
+	  <br>
+	  <br><br><br>
 	  <!-- Explore menu -->
-	  <section class="explore__menu__container">
+	  <section class="explore__menu__container"><!--parent class-->
 	   <h1 class="explore__menu__text">Explore Our Menu</h1>
+	   <div class="explore__menu__gradient__bg"><!--it  have parent and it should relative then only we can give for this absolute -->
+	   
+	   </div>
 	    <div class="explore__menu__lists"><!--image-->
+		<!-- Burger -->
 	     <div class="food__card">  <!--image text-->
-		   <div class="food__card__image">
-		    <img src="" alt="burger" class="food__image">
-		   </div>
+		   <div class="food__card__image__container">
+		    <img src="burger.jpg" alt="burger" class="food__image" />			
+		   </div>		   
 		   <div class="food__card__description">
+            <h3 class="food__title">Burger</h3>
+			<p>Burger King,Mcdonalds,Burger Place <span style="color:#D83A56">+3</span></p>
+		   </div>
+	     </div>
+		 <!-- Pizza -->
+		  <div class="food__card" id="pizza__card">  <!--image text--><!-- here id given for strictly overwrite the css like one up and bottom poosition -->
+		   <div class="food__card__image__container">
+		    <img src="pizza.jpg" alt="Pizza" class="food__image" />			
+		   </div>		   
+		   <div class="food__card__description">
+            <h3 class="food__title">pizza</h3>
+			<p>Pizza Hut,Domino's Pizza <span style="color:#D83A56">+3</span></p>
+		   </div>
+	     </div>
+		 <!-- Ice cream -->
+		  <div class="food__card">  <!--image text-->
+		   <div class="food__card__image__container">
+		    <img src="icecream.jpg" alt="ice cream" class="food__image" />			
+		   </div>		   
+		   <div class="food__card__description">
+            <h3 class="food__title">Ice creams</h3>
+			<p>Burger King,Mcdonalds,icecream Place <span style="color:#D83A56">+3</span></p>
 		   </div>
 	     </div>
 	    </div>
